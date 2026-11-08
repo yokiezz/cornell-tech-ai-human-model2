@@ -31,4 +31,4 @@ The local Model 2 computation and prediction deliverables are complete. Strict M
 
 Source attribution and AI disclosure are in PROVENANCE.md. Private instructions, raw data, example exports, and predictions are excluded from Git. New runs have UTC timestamps, command, environment, Git state, and source/input hashes. Runs preceded the first local commit, so their null git_commit fields are retained honestly.
 
-Milestone B is not complete: it still needs Models 1/3 results, the official report template/requirements, team model selection, and separately authorized remote publication and Kaggle submission. No remote repository, push, PR, or upload was performed.
+Milestone B is not complete: it still needs Models 1/3 results, the official report template/requirements, team model selection, and separately authorized remote publication and Kaggle submission. No remote repository, push, PR, or upload was performed during the reproduction run. Subsequent GitHub publication is a separate user-authorized action; no Kaggle submission is implied.

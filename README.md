@@ -63,4 +63,4 @@ See `records/reproductions/run-001/` for new evidence and `records/cornell/` for
 
 ## Scope
 
-This repository contributes Model 2. Complete course submission additionally needs Models 1/3, official report requirements/template, team selection, and separately authorized publication/submission. No remote is configured and no GitHub push, PR, or Kaggle upload is performed by these scripts.
+This repository contributes Model 2. Complete course submission additionally needs Models 1/3, official report requirements/template, team selection, and separately authorized publication/submission. These reproduction scripts do not create repositories, push code, open PRs, or upload Kaggle predictions. GitHub publication is handled separately with user authorization.
