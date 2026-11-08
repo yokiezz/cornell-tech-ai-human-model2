@@ -1,0 +1,96 @@
+{
+  "files": {
+    "train": {
+      "rows": 10000,
+      "sha256": "325e345faf88fb1c4203278098c282e40319a87b4bf17e094d2f235f51d0c07e",
+      "normalized_duplicate_extra_rows": 0,
+      "word_count_quantiles": {
+        "0.0": 75.0,
+        "0.25": 160.0,
+        "0.5": 206.0,
+        "0.75": 256.0,
+        "1.0": 350.0
+      },
+      "class_counts": {
+        "0": 5000,
+        "1": 5000
+      },
+      "conflicting_normalized_groups": 0
+    },
+    "test": {
+      "rows": 3000,
+      "sha256": "02209fdb74607f6b5f09a43300ed74761edf76f161cf9fd579cf43fb213884cd",
+      "normalized_duplicate_extra_rows": 0,
+      "word_count_quantiles": {
+        "0.0": 75.0,
+        "0.25": 173.0,
+        "0.5": 213.0,
+        "0.75": 262.0,
+        "1.0": 350.0
+      }
+    },
+    "unlabeled": {
+      "rows": 3000,
+      "sha256": "42fe881240148a2e06583692ff16ded3df5bd60558820738b2de470680934aae",
+      "normalized_duplicate_extra_rows": 0,
+      "word_count_quantiles": {
+        "0.0": 75.0,
+        "0.25": 158.0,
+        "0.5": 206.5,
+        "0.75": 258.0,
+        "1.0": 350.0
+      }
+    },
+    "train_starter_2000": {
+      "rows": 2000,
+      "sha256": "02bace8a566f4d4ae5e8b5893b2635bff862f6a35ff194d0a702dff9ed08e640",
+      "normalized_duplicate_extra_rows": 0,
+      "word_count_quantiles": {
+        "0.0": 76.0,
+        "0.25": 161.0,
+        "0.5": 207.0,
+        "0.75": 255.25,
+        "1.0": 349.0
+      },
+      "class_counts": {
+        "0": 1000,
+        "1": 1000
+      },
+      "conflicting_normalized_groups": 0
+    }
+  },
+  "overlaps": {
+    "train:test": {
+      "ids": 0,
+      "normalized_texts": 0
+    },
+    "train:unlabeled": {
+      "ids": 0,
+      "normalized_texts": 0
+    },
+    "test:unlabeled": {
+      "ids": 0,
+      "normalized_texts": 0
+    }
+  },
+  "starter_exact_subset": true,
+  "sample_submission_matches_test_ids": true,
+  "split_sha256": "15340e28ee050a0023b017abeddd2d3b72b7fc05612b9d299b59d88d31a1cb2b",
+  "split_counts": {
+    "train": {
+      "0": 4000,
+      "1": 4000
+    },
+    "validation": {
+      "0": 1000,
+      "1": 1000
+    }
+  },
+  "normalized_overlap_across_split": 0,
+  "approximate_overlap": {
+    "method": "hashed word trigram cosine; diagnostic only",
+    "rows_ge_0_9": 12,
+    "maximum": 0.9993946552276611
+  },
+  "starter_validation_rows": 386
+}

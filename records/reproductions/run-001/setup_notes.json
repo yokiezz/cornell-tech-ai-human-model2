@@ -1,0 +1,40 @@
+{
+  "checked_at_utc": "2026-11-07T22:32:26.657685+00:00",
+  "kaggle_client": "2.2.5",
+  "download_help_verified": true,
+  "api_access": "Authentication required; no API acquisition claimed",
+  "data_used": "Existing archive; archive and all five CSV hashes exactly match source manifest",
+  "fixes": [
+    "Explicit six dependency for Kaggle client",
+    "Project-local ignored KAGGLE_CONFIG_DIR avoids writing home credentials",
+    "Recorded runner adds start/completion UTC times and hashes without changing scientific configuration"
+  ],
+  "git_identity": "User supplied Yokie Zhang <yz7938@nyu.edu>; repository-local identity",
+  "source_packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1"
+  },
+  "destination_packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "clean_install": {
+    "fresh_environment": true,
+    "locked_requirements_install": "passed",
+    "pytest": "15 passed",
+    "pip_check": "No broken requirements found",
+    "model2_cli_help": "passed",
+    "python": "3.11.5"
+  },
+  "reference_python": "3.11.16",
+  "adapted_imported_files": [
+    "pyproject.toml: Kaggle extra and six",
+    "scripts/plot_cornell.py: reproduction title",
+    ".gitignore: local auth/cache/archive exclusions"
+  ],
+  "model_source_and_configs_unchanged": true
+}

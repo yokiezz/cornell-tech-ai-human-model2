@@ -1,0 +1,24 @@
+{
+  "status": "generated_and_locally_validated_not_uploaded",
+  "submission_sha256": "c9c43b37fe041912114d27cc6c1532eb20674870fbfcf39abc44a66fdf173804",
+  "rows": 3000,
+  "columns": [
+    "id",
+    "label"
+  ],
+  "test_id_order_verified": true,
+  "sample_ids_verified": true,
+  "finite_probabilities_in_unit_interval": true,
+  "probability_min": 1.7805987716156814e-08,
+  "probability_max": 0.9999998957759626,
+  "source_sha256": {
+    "src/model2/analysis.py": "e05006df76620dc2cfada3a96f812ef3e42d26d50b9df84afb570e2cdffdac71",
+    "src/model2/__init__.py": "a6ada676ecb8dbdbbdc6927d86b086f56019bc07999661c59b2a1b3340fae53c",
+    "src/model2/rehearsal.py": "3e2610248ab1741b41be1b00d1d36d856ecbbeb347210450f513e7263b7961f8",
+    "src/model2/model.py": "e328d2a6e9c01042e20b4ee794d1b056616c5edc57c04a7a84229004b54a47ad",
+    "src/model2/cli.py": "c2168eac638b1a1326d262c0147e53a62d72d244915df9a92e02e5e6b6e1da92",
+    "src/model2/cornell.py": "9a5739cdcd1794082f8172fa9f52d25e9552a636727d741725bf74eaf958312e",
+    "src/model2/data.py": "9f5a3de2a226b9370391f1795ef2a7e729a82fec903b8ea158c1eecd6e31c33e"
+  },
+  "command": "PYTHONPATH=src conda run -n partial-bnn-sgld python -m model2.cli submit --config configs/cornell_selected.json --out artifacts/cornell/full-data-001"
+}

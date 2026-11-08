@@ -1,0 +1,12 @@
+usage: acquire_data.py [-h] [--archive ARCHIVE] [--out OUT] --download-dir
+                       DOWNLOAD_DIR --record RECORD
+
+Acquire official competition CSVs from Kaggle or a verified existing ZIP.
+
+options:
+  -h, --help            show this help message and exit
+  --archive ARCHIVE     Reuse an existing local ZIP; no API call
+  --out OUT
+  --download-dir DOWNLOAD_DIR
+                        New archive directory
+  --record RECORD

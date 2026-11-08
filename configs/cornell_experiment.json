@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "cv_folds": 3,
+  "analyzers": ["char", "char_wb"],
+  "ngram_ranges": [[2, 4], [3, 5], [3, 6]],
+  "stage_one_C": 1.0,
+  "stage_two_C": [0.1, 10.0],
+  "selection_metric": "mean internal-CV margin AUROC",
+  "selection_note": "Select representation at C=1, then compare C=0.1 and 10 for that representation; this is a staged search, not the full Cartesian grid. Evaluate the selected model once on shared validation."
+}

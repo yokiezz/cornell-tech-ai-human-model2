@@ -1,0 +1,5 @@
+,words,words,characters,characters,newline_count,newline_count,nonword_nonspace_fraction,nonword_nonspace_fraction
+,mean,median,mean,median,mean,median,mean,median
+label,,,,,,,,
+0,209.3335,204.0,1240.161,1224.0,5.7985,2.0,0.02927994996038777,0.027370343843167427
+1,208.71975,209.0,1285.299,1275.5,12.21075,6.0,0.03202231876741427,0.02770748342682305

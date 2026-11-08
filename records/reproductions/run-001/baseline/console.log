@@ -1,0 +1,8 @@
+{
+  "train_margin_auroc": 0.9999999375,
+  "train_probability_auroc": 0.9999999375,
+  "validation_margin_auroc": 0.969466,
+  "validation_probability_auroc": 0.969466,
+  "train_rows": 8000,
+  "validation_rows": 2000
+}

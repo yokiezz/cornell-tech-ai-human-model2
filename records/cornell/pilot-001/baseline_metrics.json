@@ -1,0 +1,15 @@
+{
+  "rows": 2000,
+  "human": 1000,
+  "ai": 1000,
+  "auroc": 0.969466,
+  "brier": 0.06547316937051437,
+  "log_loss": 0.21959272437105454,
+  "threshold": 0.5,
+  "true_negative": 930,
+  "false_positive": 70,
+  "false_negative": 102,
+  "true_positive": 898,
+  "false_positive_rate": 0.07,
+  "false_negative_rate": 0.102
+}

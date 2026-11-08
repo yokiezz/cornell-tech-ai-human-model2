@@ -1,0 +1,50 @@
+{
+  "started_at_utc": "2026-11-07T22:32:34.098696+00:00",
+  "command": [
+    "../../work/clean-verify-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "python": "3.11.5",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "reference_revision": "1b1d379964c8b2ceb75e4eef531bbf90623ad176",
+  "git_commit": null,
+  "git_status": "?? .gitignore\n?? PROVENANCE.md\n?? README.md\n?? artifacts/\n?? configs/\n?? data/\n?? docs/\n?? pyproject.toml\n?? records/\n?? requirements-lock.txt\n?? scripts/\n?? src/\n?? tests/",
+  "sha256": {
+    "configs/baseline.json": "9f3171301ff0c1629f2ea9c5935c0d466b665053f3daef6afa2e94497dc4c81d",
+    "configs/cornell_experiment.json": "0b5f1094c3a978bc612593130fe4a5c33b23b8539bc040deb99bc39a9cc5eed8",
+    "configs/cornell_selected.json": "df1efd24ae403142fa7d33eb853c57c694715e30fb99b27bbac7edc00c92575c",
+    "data/raw/sample_submission.csv": "2fdb037826ae4a83136c393fa9d29fd74d899b2dd06d32caadbe3a56e356193d",
+    "data/raw/test.csv": "02209fdb74607f6b5f09a43300ed74761edf76f161cf9fd579cf43fb213884cd",
+    "data/raw/train.csv": "325e345faf88fb1c4203278098c282e40319a87b4bf17e094d2f235f51d0c07e",
+    "data/raw/train_starter_2000.csv": "02bace8a566f4d4ae5e8b5893b2635bff862f6a35ff194d0a702dff9ed08e640",
+    "data/raw/unlabeled.csv": "42fe881240148a2e06583692ff16ded3df5bd60558820738b2de470680934aae",
+    "pyproject.toml": "cbf8db73c01d7a247a499b25afd4edc8d4b30605902f57f63ec89acc6b749f64",
+    "records/cornell/shared_split/split.csv": "15340e28ee050a0023b017abeddd2d3b72b7fc05612b9d299b59d88d31a1cb2b",
+    "scripts/acquire_data.py": "6d27517158ef736b819b6aa3c3c65c1d3fb7d5c4ab9645b5ddff723f0eba2538",
+    "scripts/plot_cornell.py": "a41ce62e67a7dcb9b1be1c2477b00b54942752420906934fb8de8cf87fc606c0",
+    "scripts/reproduce.py": "192317ec72a8d7b162d8c58a26f282e4730a6148660a8e4ebe0a831ecd44b51e",
+    "scripts/run_recorded.py": "3d698144c22377986816ddbdc746e2342c7f5af600500767c50193e41fe77bf1",
+    "scripts/summarize_run.py": "bb7585ad3836949ae9b7fb8387f89894b214f63d6686a6517126e2fa290d643c",
+    "src/model2/__init__.py": "a6ada676ecb8dbdbbdc6927d86b086f56019bc07999661c59b2a1b3340fae53c",
+    "src/model2/analysis.py": "e05006df76620dc2cfada3a96f812ef3e42d26d50b9df84afb570e2cdffdac71",
+    "src/model2/cli.py": "c2168eac638b1a1326d262c0147e53a62d72d244915df9a92e02e5e6b6e1da92",
+    "src/model2/cornell.py": "9a5739cdcd1794082f8172fa9f52d25e9552a636727d741725bf74eaf958312e",
+    "src/model2/data.py": "9f5a3de2a226b9370391f1795ef2a7e729a82fec903b8ea158c1eecd6e31c33e",
+    "src/model2/explore.py": "f1d5fe881ca6ec555f656ac4c59d00c95556b1d80c77f9a34ba34b52f2c0d8af",
+    "src/model2/model.py": "e328d2a6e9c01042e20b4ee794d1b056616c5edc57c04a7a84229004b54a47ad",
+    "src/model2/rehearsal.py": "3e2610248ab1741b41be1b00d1d36d856ecbbeb347210450f513e7263b7961f8"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "kaggle": "2.2.5"
+  },
+  "status": "completed",
+  "returncode": 0,
+  "completed_at_utc": "2026-11-07T22:33:38.320099+00:00"
+}

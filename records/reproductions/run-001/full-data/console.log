@@ -1,0 +1,4 @@
+{
+  "train_rows": 10000,
+  "test_rows": 3000
+}

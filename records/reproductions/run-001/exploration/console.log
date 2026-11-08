@@ -1,0 +1,10 @@
+Matplotlib is building the font cache; this may take a moment.
+class    feature  rows       mean  min    q25  median     q75  max
+Human      words  4000  209.33350   75  167.0   204.0  251.00  350
+Human characters  4000 1240.16100  399 1016.0  1224.0 1462.00 2250
+Human   newlines  4000    5.79850    0    0.0     2.0   11.25   35
+   AI      words  4000  208.71975   75  151.0   209.0  263.00  350
+   AI characters  4000 1285.29900  331  941.0  1275.5 1604.00 2938
+   AI   newlines  4000   12.21075    0    0.0     6.0   15.25  170
+
+Open artifacts/run-001/exploration/README.md

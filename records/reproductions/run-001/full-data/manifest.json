@@ -1,0 +1,45 @@
+{
+  "command": "submit",
+  "argv": [
+    "submit",
+    "--config",
+    "configs/cornell_selected.json",
+    "--out",
+    "artifacts/run-001/full-data"
+  ],
+  "config": {
+    "analyzer": "char",
+    "ngram_range": [
+      2,
+      4
+    ],
+    "min_df": 2,
+    "max_features": 100000,
+    "lowercase": true,
+    "sublinear_tf": true,
+    "C": 1.0,
+    "max_iter": 10000,
+    "calibration_folds": 3,
+    "seed": 42
+  },
+  "input_sha256": {
+    "train.csv": "325e345faf88fb1c4203278098c282e40319a87b4bf17e094d2f235f51d0c07e",
+    "config": "df1efd24ae403142fa7d33eb853c57c694715e30fb99b27bbac7edc00c92575c",
+    "test.csv": "02209fdb74607f6b5f09a43300ed74761edf76f161cf9fd579cf43fb213884cd",
+    "sample_submission.csv": "2fdb037826ae4a83136c393fa9d29fd74d899b2dd06d32caadbe3a56e356193d"
+  },
+  "metrics": {
+    "train_rows": 10000,
+    "test_rows": 3000
+  },
+  "elapsed_seconds": 129.19761350005865,
+  "python": "3.11.5",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1"
+  },
+  "git_commit": null,
+  "git_status": "?? .gitignore\n?? PROVENANCE.md\n?? README.md\n?? artifacts/\n?? configs/\n?? data/\n?? docs/\n?? pyproject.toml\n?? records/\n?? requirements-lock.txt\n?? scripts/\n?? src/\n?? tests/"
+}

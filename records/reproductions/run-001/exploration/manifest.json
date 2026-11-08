@@ -1,0 +1,9 @@
+{
+  "training_rows": 8000,
+  "example_seed": 42,
+  "examples_per_class": 3,
+  "data_sha256": "325e345faf88fb1c4203278098c282e40319a87b4bf17e094d2f235f51d0c07e",
+  "split_sha256": "15340e28ee050a0023b017abeddd2d3b72b7fc05612b9d299b59d88d31a1cb2b",
+  "source_sha256": "f1d5fe881ca6ec555f656ac4c59d00c95556b1d80c77f9a34ba34b52f2c0d8af",
+  "scope": "Training partition only; no validation/test descriptions or model fitting"
+}

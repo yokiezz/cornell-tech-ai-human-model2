@@ -1,0 +1,41 @@
+{
+  "command": "split",
+  "argv": [
+    "split",
+    "--out",
+    "artifacts/shared-split"
+  ],
+  "config": {
+    "analyzer": "char",
+    "ngram_range": [
+      3,
+      5
+    ],
+    "min_df": 2,
+    "max_features": 100000,
+    "lowercase": true,
+    "sublinear_tf": true,
+    "C": 1.0,
+    "max_iter": 10000,
+    "calibration_folds": 3,
+    "seed": 42
+  },
+  "input_sha256": {
+    "train.csv": "325e345faf88fb1c4203278098c282e40319a87b4bf17e094d2f235f51d0c07e",
+    "config": "9f3171301ff0c1629f2ea9c5935c0d466b665053f3daef6afa2e94497dc4c81d"
+  },
+  "metrics": {
+    "duplicate_text_rows": 0,
+    "exact_text_overlap_between_partitions": 0
+  },
+  "elapsed_seconds": 0.01855066604912281,
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0"
+  },
+  "git_commit": "7ad4493b734c346546b33036af7fb21e04db6aa0",
+  "git_status": "?? configs/cornell_experiment.json\n?? records/cornell/\n?? src/model2/cornell.py"
+}

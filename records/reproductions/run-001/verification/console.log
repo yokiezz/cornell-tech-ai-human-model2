@@ -1,0 +1,107 @@
+{
+  "method": "hashed word trigram cosine to training; exclude validation IDs with similarity >= 0.9; no refit",
+  "threshold": 0.9,
+  "flagged_count": 12,
+  "flagged_ids": [
+    "1234",
+    "1292",
+    "1633",
+    "2557",
+    "3205",
+    "4028",
+    "4072",
+    "5095",
+    "6384",
+    "7437",
+    "9027",
+    "9103"
+  ],
+  "models": {
+    "baseline": {
+      "all_validation": {
+        "rows": 2000,
+        "human": 1000,
+        "ai": 1000,
+        "auroc": 0.969466,
+        "brier": 0.06547316937051437,
+        "log_loss": 0.21959272437105448,
+        "threshold": 0.5,
+        "true_negative": 930,
+        "false_positive": 70,
+        "false_negative": 102,
+        "true_positive": 898,
+        "false_positive_rate": 0.07,
+        "false_negative_rate": 0.102
+      },
+      "excluding_high_similarity": {
+        "rows": 1988,
+        "human": 1000,
+        "ai": 988,
+        "auroc": 0.969095141700405,
+        "brier": 0.06586837024401962,
+        "log_loss": 0.22091337256292823,
+        "threshold": 0.5,
+        "true_negative": 930,
+        "false_positive": 70,
+        "false_negative": 102,
+        "true_positive": 886,
+        "false_positive_rate": 0.07,
+        "false_negative_rate": 0.10323886639676114
+      }
+    },
+    "selected": {
+      "all_validation": {
+        "rows": 2000,
+        "human": 1000,
+        "ai": 1000,
+        "auroc": 0.9704399999999999,
+        "brier": 0.0652517553566879,
+        "log_loss": 0.21722748470021166,
+        "threshold": 0.5,
+        "true_negative": 932,
+        "false_positive": 68,
+        "false_negative": 103,
+        "true_positive": 897,
+        "false_positive_rate": 0.068,
+        "false_negative_rate": 0.103
+      },
+      "excluding_high_similarity": {
+        "rows": 1988,
+        "human": 1000,
+        "ai": 988,
+        "auroc": 0.970080971659919,
+        "brier": 0.06564561544689786,
+        "log_loss": 0.21853201466955718,
+        "threshold": 0.5,
+        "true_negative": 932,
+        "false_positive": 68,
+        "false_negative": 103,
+        "true_positive": 885,
+        "false_positive_rate": 0.068,
+        "false_negative_rate": 0.10425101214574899
+      }
+    }
+  },
+  "exploration": {
+    "example_ids": [
+      "1384",
+      "8677",
+      "1295",
+      "1342",
+      "8766",
+      "1273"
+    ],
+    "all_six_training_only": true,
+    "user_review": "pending; no user interpretation received"
+  },
+  "submission": {
+    "rows": 3000,
+    "unique_ids": 3000,
+    "matches_test_order": true,
+    "finite_in_unit_interval": true,
+    "min_probability": 1.780598771615675e-08,
+    "max_probability": 0.9999998957759626,
+    "sha256": "6b8b053afd64c5c41c0c1b5de9d94f21958f405352aefe828738d9af9c437937",
+    "uploaded": false
+  }
+}

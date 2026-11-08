@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cornell-human-ai-model2"
+version = "0.1.0"
+description = "Character TF-IDF and calibrated linear SVM for CS 5785"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "pandas>=2.2,<4", "scikit-learn>=1.6,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+plots = ["matplotlib>=3.8,<4"]
+kaggle = ["kaggle>=2.2,<3", "six>=1.16,<2"]
+
+[project.scripts]
+model2 = "model2.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

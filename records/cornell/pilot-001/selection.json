@@ -1,0 +1,265 @@
+{
+  "completed_at_utc": "2026-11-07T02:17:47.509529+00:00",
+  "plan": {
+    "seed": 42,
+    "cv_folds": 3,
+    "analyzers": [
+      "char",
+      "char_wb"
+    ],
+    "ngram_ranges": [
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "stage_one_C": 1.0,
+    "stage_two_C": [
+      0.1,
+      10.0
+    ],
+    "selection_metric": "mean internal-CV margin AUROC",
+    "selection_note": "Select representation at C=1, then compare C=0.1 and 10 for that representation; this is a staged search, not the full Cartesian grid. Evaluate the selected model once on shared validation."
+  },
+  "train_sha256": "325e345faf88fb1c4203278098c282e40319a87b4bf17e094d2f235f51d0c07e",
+  "split_sha256": "15340e28ee050a0023b017abeddd2d3b72b7fc05612b9d299b59d88d31a1cb2b",
+  "source_sha256": {
+    "analysis.py": "e05006df76620dc2cfada3a96f812ef3e42d26d50b9df84afb570e2cdffdac71",
+    "__init__.py": "a6ada676ecb8dbdbbdc6927d86b086f56019bc07999661c59b2a1b3340fae53c",
+    "rehearsal.py": "3e2610248ab1741b41be1b00d1d36d856ecbbeb347210450f513e7263b7961f8",
+    "model.py": "e328d2a6e9c01042e20b4ee794d1b056616c5edc57c04a7a84229004b54a47ad",
+    "cli.py": "c2168eac638b1a1326d262c0147e53a62d72d244915df9a92e02e5e6b6e1da92",
+    "cornell.py": "9a5739cdcd1794082f8172fa9f52d25e9552a636727d741725bf74eaf958312e",
+    "data.py": "9f5a3de2a226b9370391f1795ef2a7e729a82fec903b8ea158c1eecd6e31c33e"
+  },
+  "git_commit": "7ad4493b734c346546b33036af7fb21e04db6aa0",
+  "git_status": "?? configs/cornell_experiment.json\n?? records/cornell/\n?? src/model2/cornell.py\n?? tests/test_cornell.py",
+  "trials": [
+    {
+      "config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_features": 100000,
+        "lowercase": true,
+        "sublinear_tf": true,
+        "C": 1.0,
+        "max_iter": 10000,
+        "calibration_folds": 3,
+        "seed": 42
+      },
+      "fold_auroc": [
+        0.9647546819238544,
+        0.9712729906614586,
+        0.9715806671097632
+      ],
+      "mean_auroc": 0.9692027798983588,
+      "fold_std": 0.003147787359644072,
+      "elapsed_seconds": 15.218893334269524
+    },
+    {
+      "config": {
+        "analyzer": "char",
+        "ngram_range": [
+          3,
+          5
+        ],
+        "min_df": 2,
+        "max_features": 100000,
+        "lowercase": true,
+        "sublinear_tf": true,
+        "C": 1.0,
+        "max_iter": 10000,
+        "calibration_folds": 3,
+        "seed": 42
+      },
+      "fold_auroc": [
+        0.9617499952199444,
+        0.9682986713694914,
+        0.9663670606323749
+      ],
+      "mean_auroc": 0.965471909073937,
+      "fold_std": 0.002747394166883949,
+      "elapsed_seconds": 21.231941832695156
+    },
+    {
+      "config": {
+        "analyzer": "char",
+        "ngram_range": [
+          3,
+          6
+        ],
+        "min_df": 2,
+        "max_features": 100000,
+        "lowercase": true,
+        "sublinear_tf": true,
+        "C": 1.0,
+        "max_iter": 10000,
+        "calibration_folds": 3,
+        "seed": 42
+      },
+      "fold_auroc": [
+        0.9617055688209908,
+        0.9676941349280348,
+        0.9651199371485782
+      ],
+      "mean_auroc": 0.9648398802992012,
+      "fold_std": 0.0024528289631595168,
+      "elapsed_seconds": 33.35264841699973
+    },
+    {
+      "config": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_features": 100000,
+        "lowercase": true,
+        "sublinear_tf": true,
+        "C": 1.0,
+        "max_iter": 10000,
+        "calibration_folds": 3,
+        "seed": 42
+      },
+      "fold_auroc": [
+        0.9288738976348284,
+        0.9337540532059552,
+        0.9355339585083817
+      ],
+      "mean_auroc": 0.9327206364497217,
+      "fold_std": 0.0028154413927371892,
+      "elapsed_seconds": 13.46286066621542
+    },
+    {
+      "config": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          3,
+          5
+        ],
+        "min_df": 2,
+        "max_features": 100000,
+        "lowercase": true,
+        "sublinear_tf": true,
+        "C": 1.0,
+        "max_iter": 10000,
+        "calibration_folds": 3,
+        "seed": 42
+      },
+      "fold_auroc": [
+        0.921089717706788,
+        0.9264973664705531,
+        0.9281789689733011
+      ],
+      "mean_auroc": 0.9252553510502141,
+      "fold_std": 0.003024491429227864,
+      "elapsed_seconds": 13.137330083642155
+    },
+    {
+      "config": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          3,
+          6
+        ],
+        "min_df": 2,
+        "max_features": 100000,
+        "lowercase": true,
+        "sublinear_tf": true,
+        "C": 1.0,
+        "max_iter": 10000,
+        "calibration_folds": 3,
+        "seed": 42
+      },
+      "fold_auroc": [
+        0.9201050262565642,
+        0.9265856569089798,
+        0.9281260675258836
+      ],
+      "mean_auroc": 0.9249389168971426,
+      "fold_std": 0.0034754462793498775,
+      "elapsed_seconds": 16.392438957933336
+    },
+    {
+      "config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_features": 100000,
+        "lowercase": true,
+        "sublinear_tf": true,
+        "C": 0.1,
+        "max_iter": 10000,
+        "calibration_folds": 3,
+        "seed": 42
+      },
+      "fold_auroc": [
+        0.955596657785136,
+        0.9656454593408471,
+        0.9638261028122747
+      ],
+      "mean_auroc": 0.9616894066460859,
+      "fold_std": 0.0043717811821170835,
+      "elapsed_seconds": 14.790365582797676
+    },
+    {
+      "config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_features": 100000,
+        "lowercase": true,
+        "sublinear_tf": true,
+        "C": 10.0,
+        "max_iter": 10000,
+        "calibration_folds": 3,
+        "seed": 42
+      },
+      "fold_auroc": [
+        0.9637716775520717,
+        0.9683532202390926,
+        0.9688376707830371
+      ],
+      "mean_auroc": 0.9669875228580672,
+      "fold_std": 0.002282530592193911,
+      "elapsed_seconds": 16.043873666785657
+    }
+  ],
+  "selected_config": {
+    "analyzer": "char",
+    "ngram_range": [
+      2,
+      4
+    ],
+    "min_df": 2,
+    "max_features": 100000,
+    "lowercase": true,
+    "sublinear_tf": true,
+    "C": 1.0,
+    "max_iter": 10000,
+    "calibration_folds": 3,
+    "seed": 42
+  },
+  "selected_mean_auroc": 0.9692027798983588,
+  "validation_used_for_selection": false,
+  "limitation": "One 3-fold partition; staged search, not exhaustive; CV fold dispersion is not a confidence interval."
+}
